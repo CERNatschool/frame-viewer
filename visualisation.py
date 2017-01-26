@@ -90,8 +90,10 @@ def make_frame_image(basename, pixels, outputpath, pixel_mask = {}):
     frfigax.set_aspect('equal')
 
     # Show the figure.
-    frfig.show()
-    raw_input()
+    # Only uncomment if you have a suitable backend (i.e. with GUI)
+    # configured on your system.
+    #frfig.show()
+    #raw_input()
 
     # Save the figure.
     frfig.savefig(outputpath + "/%s.png" % (basename))

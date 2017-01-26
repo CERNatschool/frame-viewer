@@ -7,7 +7,7 @@
 
  See the README.md file and the GitHub wiki for more information.
 
- http://www.researchinschools.org
+ http://www.researchinschools.org/CERN
 
 """
 
@@ -128,9 +128,13 @@ if __name__ == "__main__":
 
                 # Assign a Pixel object to the dictionary, using X as the key.
                 pixels[X] = C
-                #pixels[X] = Pixel(x,y,C,-1)
 
             # Make an image of the frame.
             make_frame_image(base_name, pixels, output_path)
 
     lg.info(" *")
+
+    print("*")
+    print("* Complete! View the results using an image viewer, for example:")
+    print("$ eog %s/ &" % (output_path))
+    print("*")
